@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Ingressos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Verificador de Ingressos do Evento</h1>
+        <p class="subtitle">Descubra se o evento pode acontecer de acordo com as regras de capacidade!</p>
+        <div class="card">
+            <div class="input-group">
+                <label for="alunos">Número de Alunos</label>
+                <input type="number" id="alunos" placeholder="Ex: 50">
+            </div>
+            <div class="input-group">
+                <label for="monitores">Número de Monitores</label>
+                <input type="number" id="monitores" placeholder="Ex: 5">
+            </div>
+            <div class="input-group">
+                <label for="convidados">Número de Convidados</label>
+                <input type="number" id="convidados" placeholder="Ex: 10">
+            </div>
+            <button class="verify-btn">Verificar</button>
+            <div class="result-box">
+                <p><strong>Status do Evento:</strong></p>
+                <p class="status-message">Aguardando dados...</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
